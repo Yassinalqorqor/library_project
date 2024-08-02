@@ -1,6 +1,6 @@
-part of 'auth_cubit.dart';
+abstract class AuthStates{}
+class AuthInitial extends  AuthStates{}
+class AuthLoding extends  AuthStates{}
+class AuthError extends  AuthStates{}
+class AuthSuccess extends  AuthStates{}
 
-@immutable
-sealed class AuthState {}
-
-final class AuthInitial extends AuthState {}
